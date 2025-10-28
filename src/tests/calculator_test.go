@@ -22,7 +22,7 @@ func TestAdd(t *testing.T) {
 
 	// Case 3 : numbers with a 0
 	result = utils.Add(10, 0)
-	expected = 10
+	expected = 11
 	if result != expected {
 		t.Errorf("Add(10, 0) = %d; attendu %d", result, expected)
 	}
