@@ -37,6 +37,14 @@ We will configure GitHub to protect our `main` branch. This will make Pull Reque
 
 10. Scroll to the bottom and click the green **`Create`** button to save the rule.
 
+<br>
+
 ---
 
+<br>
+
 Your `main` branch is now protected! Now, let's try to break it.
+
+---
+
+Now to merge on main you have to dev on an other branch, push it on origin and go on Github -> create a Pull Request -> merge it on `main`.
