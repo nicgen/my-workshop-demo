@@ -1,4 +1,4 @@
-### Configure the Branch Protection Rule 🛡️
+## PART 1 : Configure the Branch Protection Rule 🛡️
 
 We will configure GitHub to protect our `main` branch. This will make Pull Requests the _only_ way to get code into `main`.
 
