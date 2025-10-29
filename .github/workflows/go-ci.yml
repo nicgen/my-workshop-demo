@@ -1,0 +1,35 @@
+# Name of the workflow (visible in the "Actions" tab)
+name: CI Go
+
+# "on:" defines the trigger
+on:
+  # The event is the "pull_request"
+  pull_request:
+    # We only target PRs aimed at the "main" branch
+    branches: [main]
+
+# "jobs:" lists all the tasks to do
+jobs:
+  # The name of our job (you can call it whatever you want)
+  build-and-test:
+    # Virtual machine this job will run on
+    runs-on: ubuntu-latest
+
+# "steps:" is the sequence of actions for this job
+steps:
+  # Step 1: Check out the PR's code
+  # We use a pre-made "action" from GitHub
+  - name: Checkout code
+    uses: actions/checkout@v4
+
+  # Step 2: Set up the Go environment
+  # We use another public action to install Go
+  - name: Set up Go
+    uses: actions/setup-go@v5
+    with:
+      go-version: "1.22" # (or whatever version you are using)
+
+# Step 3: Run tests
+# This is our own command
+- name: Run tests
+  run: go test -v ./src/tests/
