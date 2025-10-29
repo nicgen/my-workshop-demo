@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  quantum-analysis:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
