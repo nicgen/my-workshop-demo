@@ -31,5 +31,5 @@ steps:
 
 # Step 3: Run tests
 # This is our own command
-- name: Run tests
-  run: go test -v ./src/tests/
+  - name: Run tests
+    run: go test -v ./src/tests/
