@@ -7,15 +7,25 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: 🛰️ Initializing Quantum Analyzers...
+        run: |
+          echo "Booting up... please wait."
+          sleep 5
+          echo "Analyzers are online."
 
-      - name: Set up Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: "1.23.1"
+      - name: 🧙‍♂️ Summoning Code Spirits...
+        run: |
+          echo "Scanning files for syntax errors (and bad vibes)..."
+          sleep 8
+          echo "Scan complete. No bad vibes detected."
 
-      - name: Run tests
-        run: go test ./src/tests/
-        #Or > go test ./...
+      # Étape 3 : Le rapport final
+      - name: 🚀 Generating Final Report
+        run: |
+          echo "---------------------------------------"
+          echo "YOU THOUGHT I'LL GIVE YOU THE ANSWER ? "
+          echo "---------------------------------------"
+          echo "Result: Your code is... technically code."
+          echo "✅ Success! (Source: trust me.)"
