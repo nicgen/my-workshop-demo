@@ -1,7 +1,7 @@
 # 🚀 Go GitHub Workshop Template
 
 [![CI Go](https://img.shields.io/badge/CI_GO-Github_Actions-orange)](https://github.com/ClemNTTS/workshop-template-go)
-![Go Version](https://img.shields.io/badge/Go-1.23-blue.svg)
+![Go Version](https://img.shields.io/badge/Go-1.23-blue.svg)(https://go.dev/)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 A minimal Go project designed for a hands-on workshop. This template provides a starting point to learn two fundamental DevOps practices: **Branch Protection Rules** and **Automated CI** with GitHub Actions.
