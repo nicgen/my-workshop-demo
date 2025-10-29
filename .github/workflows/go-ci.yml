@@ -16,20 +16,20 @@ jobs:
     runs-on: ubuntu-latest
 
 # "steps:" is the sequence of actions for this job
-steps:
+    steps:
   # Step 1: Check out the PR's code
   # We use a pre-made "action" from GitHub
-  - name: Checkout code
-    uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
   # Step 2: Set up the Go environment
   # We use another public action to install Go
-  - name: Set up Go
-    uses: actions/setup-go@v5
-    with:
-      go-version: "1.22" # (or whatever version you are using)
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22" # (or whatever version you are using)
 
 # Step 3: Run tests
 # This is our own command
-  - name: Run tests
-    run: go test -v ./src/tests/
+      - name: Run tests
+        run: go test -v ./src/tests/
