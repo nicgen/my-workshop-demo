@@ -1,5 +1,7 @@
 # 🚀 Go GitHub Workshop Template
 
+**CHANGE**
+
 [![CI Go](https://img.shields.io/badge/CI_GO-Github_Actions-orange)](https://github.com/ClemNTTS/workshop-template-go)
 ![Go Version](https://img.shields.io/badge/Go-1.23-blue.svg)(https://go.dev/)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
